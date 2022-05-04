@@ -15,10 +15,59 @@
         font-size: 48px;
         align-self: center;
       }
+      p {
+        font-weight: bold;
+      }
+      section {
+        background-color: #5ac88b;
+      }
+      #styled-by-id {
+        font-family: Georgeia, Cambria, serif;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin: 4px;
+        padding: 5px;
+        font-size: 20px;
+      }
+      nav a {
+        margin: 4px;
+        border: 2px solid black;
+        padding: 5px;
+        background-color: #003100;
+        color: #eeffee;
+        display: inline-block;
+      }
+      nav a :hover {
+        background-color: #eeffee;
+        color: #003100;
+      }
+      nav a :visited {
+        color: purple;
+      }
     </style>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <ul>
+        <a href="index.html" class="nav-link"><li>Inline CSS Page</li></a>
+        <a href="internal-css.html" class="nav-link">
+          <li>Internal CSS Page</li>
+        </a>
+        <a href="external-css.html" class="nav-link">
+          <li>External CSS Page</li>
+        </a>
+        <a href="testing-cascading.html" class="nav-link">
+          <li>Testing Cascading CSS Page</li>
+        </a>
+        <a href="classes-and-ids.html" class="nav-link">
+          <li>External CSS Page</li>
+        </a>
+      </ul>
+    </nav>
     <main>
       <h1>Backgrounds</h1>
       <section>
