@@ -13,6 +13,69 @@
         background-repeat: repeat-y;
         background-size: cover;
         margin: 5% 10%;
+
+        /* 
+       Allows us to define a name for our animation so that multiple animations can be created 
+       for a single web page and teh animation can be used for several different elements if we want
+       */
+        animation-name: fade-in;
+
+        /*defines duration of the animation */
+        animation-duration: 1s;
+
+        /* This defines how the animation will look withing 1s timeframe */
+        animation-timing-function: ease-in;
+
+        /* 
+        This causes 0.5 second delay within 1s timeframe
+        */
+        animation-delay: 0.5s;
+        /* Defines how many times the animation will run */
+        /* animation-iteration-count: 2; */
+
+        /* Defines direction the animation will run. Normal is default */
+        /* animation-direction: normal; */
+
+        /* This allows us to keep the styling that occurs at the
+        end of the animation */
+        animation-fill-mode: forwards;
+        -o-animation: fade-in 1s ease-in 0.5s forwards;
+        -moz-animation: fade-in 1s ease-in 0.5s forwards;
+        -webkit-animation: fade-in 1s ease-in 0.5s forwards;
+        animation: fade-in 1s ease-in 0.5s forwards;
+      }
+
+      @keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      /* Square animation */
+      @keyframes square {
+        0% {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        25% {
+          left: 200px;
+        }
+        50% {
+          top: 200px;
+        }
+        75% {
+          left: 0;
+        }
+        100% {
+          top: 0;
+        }
       }
       h1 {
         font-size: 48px;
